@@ -58,31 +58,31 @@
 
 //Task 4
 //String
-let str5 = "poka";
-let und4;
-let strund = str5+und4;
-
-
-let str6 = "piv";
-let bol4 = false;
-let strbol = str6+bol4;
-
-
-let str4 = "privet";
-let num6 = 24;
-let strnum = str4+num6;
-console.log(strnum);
-
-
-let str7 = "pov";
-let str8 = "torchik";
-let strstr = str7+str8;
-console.log(strstr);
-
-
-let str9 = "pun";
-let bit4 = 522n;
-let strbit = str9+bit4;
+// let str5 = "poka";
+// let und4;
+// let strund = str5+und4;
+//
+//
+// let str6 = "piv";
+// let bol4 = false;
+// let strbol = str6+bol4;
+//
+//
+// let str4 = "privet";
+// let num6 = 24;
+// let strnum = str4+num6;
+// console.log(strnum);
+//
+//
+// let str7 = "pov";
+// let str8 = "torchik";
+// let strstr = str7+str8;
+// console.log(strstr);
+//
+//
+// let str9 = "pun";
+// let bit4 = 522n;
+// let strbit = str9+bit4;
 
 
 // let str10 = "pako";
@@ -91,10 +91,10 @@ let strbit = str9+bit4;
 // console.log(strsym); // НЕЛЬЗЯ //
 
 
-let str11 = "juias";
-let nul4 = +null;
-;let strnul = str11+nul4;
-console.log(strnul);
+// let str11 = "juias";
+// let nul4 = +null;
+// ;let strnul = str11+nul4;
+// console.log(strnul);
 
 // let str12 = "pasksk";
 // let obj4 = {a:kashtan};
@@ -103,26 +103,26 @@ console.log(strnul);
 
 //Number
 
-let num7= 5;
-let und5;
-let numund = num7+und5;
-
-
-let num8 = 6;
-let bol5 = false;
-let numbol = num8+bol5;
-
-
-let num9 = 7;
-let num10 = 24;
-let numnum = num9+num10;
-console.log(numnum);
-
-
-let num11 = 8;
-let str13 = "torchik";
-let numstr = num11+str13;
-console.log(numstr);
+// let num7= 5;
+// let und5;
+// let numund = num7+und5;
+//
+//
+// let num8 = 6;
+// let bol5 = false;
+// let numbol = num8+bol5;
+//
+//
+// let num9 = 7;
+// let num10 = 24;
+// let numnum = num9+num10;
+// console.log(numnum);
+//
+//
+// let num11 = 8;
+// let str13 = "torchik";
+// let numstr = num11+str13;
+// console.log(numstr);
 
 
 // let num12 = 9;
@@ -136,10 +136,10 @@ console.log(numstr);
 // console.log(numsym); // НЕЛЬЗЯ //
 
 
-let num14 = 11;
-let nul5 = +null;
-;let numnul = num14+nul5;
-console.log(strnul);
+// let num14 = 11;
+// let nul5 = +null;
+// ;let numnul = num14+nul5;
+// console.log(strnul);
 
 // let num15 = 12;
 // let obj5 = {c:kashan};
@@ -149,26 +149,26 @@ console.log(strnul);
 //Task5
 
 //String
-let mstr5 = "poka";
-let mund4;
-let mstrund = mstr5-mund4;
-
-
-let mstr6 = "piv";
-let mbol4 = false;
-let mstrbol = mstr6-mbol4;
-
-
-let mstr4 = "privet";
-let mnum6 = 24;
-let mstrnum = mstr4-mnum6;
-console.log(mstrnum);
-
-
-let mstr7 = "pov";
-let mstr8 = "torchik";
-let mstrstr = mstr7-mstr8;
-console.log(mstrstr);
+// let mstr5 = "poka";
+// let mund4;
+// let mstrund = mstr5-mund4;
+//
+//
+// let mstr6 = "piv";
+// let mbol4 = false;
+// let mstrbol = mstr6-mbol4;
+//
+//
+// let mstr4 = "privet";
+// let mnum6 = 24;
+// let mstrnum = mstr4-mnum6;
+// console.log(mstrnum);
+//
+//
+// let mstr7 = "pov";
+// let mstr8 = "torchik";
+// let mstrstr = mstr7-mstr8;
+// console.log(mstrstr);
 
 
 // let mstr9 = "pun";
@@ -182,10 +182,10 @@ console.log(mstrstr);
 // console.log(mstrsym); // НЕЛЬЗЯ //
 
 
-let mstr11 = "juias";
-let mnul4 = +null;
-;let mstrnul = mstr11-mnul4;
-console.log(mstrnul);
+// let mstr11 = "juias";
+// let mnul4 = +null;
+// ;let mstrnul = mstr11-mnul4;
+// console.log(mstrnul);
 
 // let mstr12 = "pasksk";
 // let mobj4 = {a:kashtan};
@@ -194,27 +194,27 @@ console.log(mstrnul);
 
 //Number
 
-let mnum7= 5;
-let mund5;
-let mnumund = mnum7-mund5;
-
-
-let mnum8 = 6;
-let mbol5 = false;
-let mnumbol = mnum8-mbol5;
-
-
-let mnum9 = 7;
-let mnum10 = 24;
-let mnumnum = mnum9-mnum10;
-console.log(mnumnum);
-
-
-let mnum11 = 8;
-let mstr13 = "torchik";
-let mnumstr = mnum11-mstr13;
-console.log(mnumstr);
-
+// let mnum7= 5;
+// let mund5;
+// let mnumund = mnum7-mund5;
+//
+//
+// let mnum8 = 6;
+// let mbol5 = false;
+// let mnumbol = mnum8-mbol5;
+//
+//
+// let mnum9 = 7;
+// let mnum10 = 24;
+// let mnumnum = mnum9-mnum10;
+// console.log(mnumnum);
+//
+//
+// let mnum11 = 8;
+// let mstr13 = "torchik";
+// let mnumstr = mnum11-mstr13;
+// console.log(mnumstr);
+//
 
 // let mnum12 = 9;
 // let mbit5 = 524n;
@@ -227,10 +227,10 @@ console.log(mnumstr);
 // console.log(mnumsym); // НЕЛЬЗЯ //
 
 
-let mnum14 = 11;
-let mnul5 = +null;
-;let mnumnul = mnum14-mnul5;
-console.log(mstrnul);
+// let mnum14 = 11;
+// let mnul5 = +null;
+// ;let mnumnul = mnum14-mnul5;
+// console.log(mstrnul);
 
 // let mnum15 = 12;
 // let mobj5 = {c:kashan};
@@ -252,20 +252,151 @@ console.log(mstrnul);
 // else{console.log(age, "вход воспрещён")}
 
 //Task 8
+//
+// let staj = +prompt('Стаж работы');
+// if(staj >0&& staj <5){
+//     console.log("Ваша надбавка - 0%")
+//
+// }else if (staj >=5&& staj <10){
+//     console.log("Ваша надбавка - 5%")}
+// else if (staj >=10&& staj <20){
+//     console.log("Ваша надбавка - 10%")}
+//     else if (staj >=20&& staj <60){
+//         console.log("Уволен даунич")
+//     }else{
+//         console.log("Не получаешь надбавку, сачок")
+// }
+    //Task 9
+// if else
+// function daysofWeek(Day) {
+//     if (Day === 1) {console.log("Monday")}
+//     else if (Day === 2){console.log("Tuesday")}
+//     else if (Day === 3){console.log("Wednesday")}
+//     else if (Day === 4){console.log("Thurstday")}
+//     else if (Day === 5){console.log("Friday")}
+//     else if (Day === 6){console.log("Saturday")}
+//     else if (Day === 7){console.log("Sunday")
+//     }else{
+//         console.log("Fisting is 300 bucks");
+//     }
+//     } const Day = +prompt("Введите день недели");
+//     daysofWeek(Day);
 
-let staj = +prompt('Стаж работы');
-if(staj >0&& staj <5){
-    console.log("Ваша надбавка - 0%")
+    //switchcase
+// let Day = +prompt("День недели");
+// switch (Day){case 1:console.log("Monday")
+//     break;
+//         case 2:console.log("Tuesday")
+//         break;
+//     case 3:console.log("Wednesday")
+//         break;
+//     case 4:console.log("Thurstday")
+//         break;
+//     case 5:console.log("Friday")
+//         break;
+//     case 6:console.log("Saturday")
+//         break;
+//     case 7:console.log("Sunday")
+//         break;
+// default:
+// console.log("Нет такого дня недели");
+// break;
+// }
 
-}else if (staj >=5&& staj <10){
-    console.log("Ваша надбавка - 5%")}
-else if (staj >=10&& staj <20){
-    console.log("Ваша надбавка - 10%")}
-    else if (staj >=20&& staj <60){
-        console.log("Уволен даунич")
-    }else{
-        console.log("Не получаешь надбавку, сачок")
+//kapec izvini <3 p.s. eto moya jizn
+// const Day = +prompt("День недели");
+// Day === 1
+// ?console.log("Monday")
+//     :Day === 2
+// ?console.log("Tuesday")
+//     :Day === 3
+// ?console.log ("Wednesday")
+//         :Day === 4
+// ?console.log("Thurstday")
+//             :Day === 5
+// ?console.log("Friday")
+//                 :Day === 6
+// ?console.log("Saturday")
+//                     :Day === 7
+// ?console.log("Sunday")
+//                         :console.log("Попробуй ещё");
+
+//Task 10
+
+// let Number = +prompt("Введи значение");
+// if (Number<0){alert(-1)}
+// else if (Number===0){alert(0)}
+// else if (Number>0){alert(1)}
+// else {alert ("Unknown")};
+
+//Task 11
+
+// let login = prompt("Логин");
+// login === "Сотрудник"
+// ?message = "Привет"
+//     :login === "Директор"
+// ?message = "Здравствуйте"
+//     :login === ""
+// ?message = "Нет логина"
+//         :message = ""
+// console.log(message);
+
+//Task 12
+
+// function numofBlock(Apps){
+//     if (Apps>=1&&Apps <=20){console.log("Дом 1")
+// }else if (Apps >=20&&Apps <=48){console.log("Дом 2")
+//     }else if (Apps >=49&&Apps <=90){console.log("Дом 3")
+//     }else {console.log("Отсутствует")}};
+// let Apps = +prompt("Введите номер квартиры");
+// numofBlock(Apps);
+
+//Task 13
+
+// let browser = prompt("Введите название браузера");
+// if (browser === "Edge"){alert("You've got the Edge!")}
+// else if (browser === "Google" || browser === "FireFox" || browser === "Safari"|| browser === "Opera"){alert("Okay we support these browsers too")}
+// else {alert("We hope that this page looks ok!")};
+
+//Task 14
+
+let option = +prompt("Введите число между 0 и 3");
+switch (option){case 0:alert("Вы ввели число 0")
+    break;
+        case 1:alert("Вы ввели число 1")
+        break;
+    case 2:
+    case 3:alert("Вы ввели число 2, а может и 3 ")
+        break;
+    default:
+        alert("Выполните требования");
+        break;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
