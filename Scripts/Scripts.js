@@ -87,22 +87,77 @@
 // console.log(sum);
 
 //Task 12
+// let s =prompt('Сколько эллементов?');
+// let arr = [];
+// let str = '';
+//
+// for (let i=0;i<s;i++){
+//     str+='x';
+//     arr.push(str);
+// }
+// console.log(arr);
+
+//Task 13
+
+// let s = prompt('Сколько элементов?');
+// let arr = [];
+// let str;
+// for (var i = 0; i < s; i++) {
+//     str = '';
+//     for (var j = 0; j <= i; j++) {
+//         str += i+1;
+//     }
+//     arr.push(str);
+// }
+// console.log(arr);
 
 
+//Task 14
+
+// let arr = [];
+//
+// for (let i = 0; i < 11; i++) {
+//     let firstArr = [];
+//
+//     for (let j = 0; j < 11; j++) {
+//         let el = j === i - i || j === j - i || i === j - j + 10 || i === i - j + 10 ? "x" : 0;
+//         firstArr.push(el);
+//     }
+//     arr.push(firstArr);
+// }
+// console.log(arr);
+
+//Task 15
+
+// let arr = [];
+//
+// for (let i = 1; i <= 10; i++) {
+//     let firstArr = [];
+//
+//     for (let j = 1; j <= 10; j++) {
+//         let el = j * i;
+//         firstArr.push(el);
+//     }
+//     arr.push(firstArr);
+// }
+// console.log(arr);
 
 
+//Task 16
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+// function declination() {
+//     let num = +prompt("Введите число товаров");
+//     let word = ['товар', 'товара', 'товаров'];
+//     if (num % 100 > 4 && num % 100 < 20) {
+//         return word[2];
+//     } else if (num % 10 > 1 && num % 10 < 5) {
+//         return word[1];
+//     } else if (num % 10 > 0 && num % 10 < 2) {
+//         return word[0];
+//     } else if (num % 10 >= 0 && num % 10 <= 0) {
+//         return word[2];
+//     }
+// }
+//
+// console.log(declination());
 
