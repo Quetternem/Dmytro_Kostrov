@@ -1,163 +1,147 @@
-// // Task 1
-// const letters = ["a", "b", "c"];
-// const numbers = [1, 2, 3];
+//Zadanie 1 )))))
 //
-// const alphaNumeric = letters.concat(numbers);
-// console.log(alphaNumeric);
-//Task 2
+// function arrayFill(value,length){let puk=[];
+//     for(let i= 0;i<length;i++){
+//     puk.push(value);}
+// return puk;}
+// console.log(arrayFill("x",5));
 
-// push method
-
-// const letters = ["a", "b", "c"];
-// letters.push("1", "2", "3");
-// console.log(letters);
-
-//splice method
-
-// const letters = ["a", "b", "c", "d", "e", "f"];
-// letters.splice(3, 3, 1, 2, 3);
-// console.log(letters);
-
-//Task 3
-
-// const numbers = [1, 2, 3, 4, 5];
-// numbers.splice(1,2);
-// console.log(numbers);
-
-//Task 4
-
-// const numbers = [1, 2, 3, 4, 5];
-// numbers.splice(3,0,"a","b","c");
-// console.log(numbers);
-
-//Task 5
-
-// const arr = [1, 2, 3, 4, 5];
-// const arr1 = [];
-// for (let i = 0; i<arr.length; i++){
-//     console.log(arr1.push(arr[i]*10));
-// }
-// console.log(arr);
-// console.log(arr1);
-
-//Task 6
-
-// let i = 4;
-// while (i <= 400) {
-//     console.log(i);
-//     i++;
-// }
-
-// Task 7
-// let i = 1
-// do {
-//     i = i+3;
-//     console.log(i);
-// } while (i < 13);
+//Zadanie 2))))
 
 
-//Task 8
+/*
+function isNumberInRange(){
+    let number = prompt("Какое число вы хотите проверить?");
+    if (number>0&&number<10){
 
-// let i = 654;
-//  while (i>-1) {
-//      console.log(i);
-//      i--;
-//  }
+        return true}
+    else if (number<0&&number>10){
+        return false}
+    else {return false}}
+console.log(isNumberInRange());
 
-//Task 9
+*/
 
-// let i = 1983;
-// while (i <= 2017) {
-//     console.log(i);
-//     i++;
-// }
+//Zadanie 3 )))
 
-//Task 10
 
-// for (i=-4; i<=100;i+=2){
-//     console.log(i);
-// }
-
-//Task 11
-
-// let sum = 0;
-// for(let i =0;i <= 100; i++){
-//     sum+=i;
-// }
-// console.log(sum);
-
-//Task 12
-// let s =prompt('Сколько эллементов?');
-// let arr = [];
-// let str = '';
-//
-// for (let i=0;i<s;i++){
-//     str+='x';
-//     arr.push(str);
-// }
-// console.log(arr);
-
-//Task 13
-
-// let s = prompt('Сколько элементов?');
-// let arr = [];
-// let str;
-// for (var i = 0; i < s; i++) {
-//     str = '';
-//     for (var j = 0; j <= i; j++) {
-//         str += i+1;
+// function isEven(){
+//     let number = prompt("Какое число вы хотите проверить?");
+//     if (number% 2===0){
+//         return true
 //     }
-//     arr.push(str);
+//     else {return false}
 // }
-// console.log(arr);
+// console.log(isEven());
 
 
-//Task 14
-
-// let arr = [];
+//Zadanie 4))))
+// let bobby = [1,2,5,6,10,12,13,525,25,5030,87];
+// let billy = [];
+//     for(let i = 0;i<bobby.length;i++){
+//         if (isEven(i)){
+//             billy.push(i);}
 //
-// for (let i = 0; i < 11; i++) {
-//     let firstArr = [];
-//
-//     for (let j = 0; j < 11; j++) {
-//         let el = j === i - i || j === j - i || i === j - j + 10 || i === i - j + 10 ? "x" : 0;
-//         firstArr.push(el);
-//     }
-//     arr.push(firstArr);
 // }
-// console.log(arr);
-
-//Task 15
-
-// let arr = [];
-//
-// for (let i = 1; i <= 10; i++) {
-//     let firstArr = [];
-//
-//     for (let j = 1; j <= 10; j++) {
-//         let el = j * i;
-//         firstArr.push(el);
-//     }
-//     arr.push(firstArr);
-// }
-// console.log(arr);
+// console.log(billy);
+// function isEven (num){
+//     return num %2===0;}
 
 
-//Task 16
+//Zadanie 5 )))
 
-// function declination() {
-//     let num = +prompt("Введите число товаров");
-//     let word = ['товар', 'товара', 'товаров'];
-//     if (num % 100 > 4 && num % 100 < 20) {
-//         return word[2];
-//     } else if (num % 10 > 1 && num % 10 < 5) {
-//         return word[1];
-//     } else if (num % 10 > 0 && num % 10 < 2) {
-//         return word[0];
-//     } else if (num % 10 >= 0 && num % 10 <= 0) {
-//         return word[2];
-//     }
+
+// function dgr(num, numStep) {
+//     return num ** numStep;
 // }
 //
-// console.log(declination());
+// console.log(dgr(3,15));
+// console.log(dgr(4,16));
 
+
+// Zadanie 6))))))
+
+// function yourAge(){
+//     let age=prompt('Введите свой возраст:');
+//     if (age>=16){
+//         return 'Добро пожаловать';
+//     }else if(age<16){
+//         return 'Вы еще молоды';
+//     }else{
+//     return 'Введите свой возраст:'};
+// }
+//
+// console.log(yourAge());
+
+
+// Zadanie 7))))
+
+// function yourAge(age) {
+//     let ageValue
+//     ageValue = age || 18;
+//     age = 60 - age;
+//     return age > 16 ? "Добро пожаловать" :
+//         age < 16 ? "Вы еще молоды" :
+//               "Введите возраст";
+// }
+// console.log(yourAge(18));
+// console.log(yourAge(12));
+// console.log(yourAge());
+// console.log(yourAge(undefined));
+
+// Zadanie 8))))
+
+// let str = "hello world!";
+// let str1 = [];
+//
+// function ucFirst(word) {
+//     return word[0].toUpperCase() + word.slice(1);
+// }
+//
+// let value = str.split(' ');
+// for (let i = 0; i < value.length; i++) {
+//     str1.push(ucFirst(value[i]));
+// }
+//
+// let str2 = str1.join(" ");
+//
+// console.log(str1);
+// console.log(str2);
+
+//Zadanie 9)))))
+// let str = "var_texthello.";
+// let str1 = [];
+//
+// function ucFirst(word) {
+//     return word[0].toUpperCase() + word.slice(1);
+// }
+//
+// let value = str.split('_');
+// for (let i = 0; i < value.length; i++) {
+//     str1.push(ucFirst(value[i]));
+// }
+//
+// let str2 = str1.join("");
+//
+// console.log(str1);
+// console.log(str2);
+
+
+
+
+// Zadanie 10))))
+
+// let array = [525,"kubus","oppachki","chet ochen vajnoe",666];
+//
+// function inArray(elements,array){
+//     for (let i=0;i<array.length;i++){
+//         if (array[i]===elements){
+//             return true;
+//         }
+//     }return false
+// }
+//
+// console.log(inArray("kubus",array));
+// console.log(inArray("plak",array));
+// console.log(inArray(525,array));
+// console.log(inArray("opachki:(",array));
