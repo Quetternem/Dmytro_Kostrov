@@ -1,147 +1,170 @@
-//Zadanie 1 )))))
-//
-// function arrayFill(value,length){let puk=[];
-//     for(let i= 0;i<length;i++){
-//     puk.push(value);}
-// return puk;}
-// console.log(arrayFill("x",5));
 
-//Zadanie 2))))
+class Human {
+    constructor(height, weight, name, date, gender, disability) {
+        this.height = height;
+        this.weight = weight;
+        this.name = name;
+        this.date = date;
+        this.gender = gender;
+        this.disability = !!disability;
+    }
 
+    sayHi () {
+        console.log( `Hello, my name is ${this.name}`);
+    }
 
-/*
-function isNumberInRange(){
-    let number = prompt("Какое число вы хотите проверить?");
-    if (number>0&&number<10){
+    get getInfo () {
+        const info = {
+            height: this.height,
+            weight: this.weight,
+            name: this.name,
+            date: this.date,
+            gender: this.gender,
+            disability: this.disability,
+        }
+        console.log(info);
+    }
 
-        return true}
-    else if (number<0&&number>10){
-        return false}
-    else {return false}}
-console.log(isNumberInRange());
+    set setNewName (name) {
+        this.name = name;
+    }
 
-*/
+    set setNewDisability (disability) {
+        this.disability = disability;
+    }
+}
 
-//Zadanie 3 )))
-
-
-// function isEven(){
-//     let number = prompt("Какое число вы хотите проверить?");
-//     if (number% 2===0){
-//         return true
-//     }
-//     else {return false}
-// }
-// console.log(isEven());
-
-
-//Zadanie 4))))
-// let bobby = [1,2,5,6,10,12,13,525,25,5030,87];
-// let billy = [];
-//     for(let i = 0;i<bobby.length;i++){
-//         if (isEven(i)){
-//             billy.push(i);}
-//
-// }
-// console.log(billy);
-// function isEven (num){
-//     return num %2===0;}
+const firstHuman = new Human(190,90, "Billy", new Date(1993,10,21),"male","have");
+firstHuman.sayHi();
+console.log(firstHuman);
+firstHuman.getInfo;
+firstHuman.setNewName = "Van";
+firstHuman.setNewDisability = false;
+console.log(firstHuman);
 
 
-//Zadanie 5 )))
+class frontendDeveloper extends Human {
+    constructor(height, weight, name, date, gender, disability, careerStart, previousCompanies) {
+        super(height, weight, name, date, gender, disability);
+        this.careerStart = careerStart;
+        this.previousCompanies =  [{
+            start: new Date(2021, 10, 15),
+            end: new Date(2022, 3, 15),
+            salaryPerMonth: Number(4500),
+            position: "senior",
+            companyName: 'Oracle',
+        },{
+            start: new Date(2022, 4, 13),
+            end: new Date(2022, 12, 25),
+            salaryPerMonth: Number(5000),
+            position: 'middle',
+            companyName: 'Elcaro',
+        } ];
+    }
+
+    get getInfo() {
+        return super.getInfo;
+    }
+
+    sayHi2 () {
+        console.log(`Привет, меня зовут ${this.name}, я Фронтенд разработчик. Работаю с ${this.careerStart}`);
+    }
+
+    allSalaryPerMonth () {
+        let salaryInCompany;
+        this.previousCompanies.forEach((num) => {
+            let salaryYear = (num.end.getFullYear() - num.start.getFullYear()) * 12;
+            let salaryMonth = salaryYear + (num.end.getMonth() - num.start.getMonth());
+            salaryInCompany = num.salaryPerMonth * salaryMonth;
+        })
+        console.log(salaryInCompany, `salaryInCompany`);
+    }
+
+    nameCompany () {
+        let companyName = prompt("Enter company name", "Oracle");
+        this.previousCompanies.filter((num) => {
+            if (num.companyName === companyName) {
+                console.log(num);
+            }
+        });
+    }
+
+    setNewCompany (newCompany) {
+        this.previousCompanies.push(newCompany);
+        console.log(this.previousCompanies);
+    }
+
+}
+const firstFrontendDeveloper = new frontendDeveloper(183,85,"Vasya",new Date(1999,12,1),"male",false, new Date(2021,5,14) );
+console.log(firstFrontendDeveloper);
+firstFrontendDeveloper.sayHi2();
+firstFrontendDeveloper.allSalaryPerMonth();
+firstFrontendDeveloper.nameCompany();
+let newWork = {
+    start: new Date(2021,6,10),
+    end: new Date(2022,4,12),
+    salaryPerMonth: 1700,
+    position: 'junior',
+    companyName: 'Carole',
+}
+firstFrontendDeveloper.setNewCompany(newWork);
+firstFrontendDeveloper.getInfo;
 
 
-// function dgr(num, numStep) {
-//     return num ** numStep;
-// }
-//
-// console.log(dgr(3,15));
-// console.log(dgr(4,16));
+class builder extends Human {
+    constructor(height, weight, name, date, gender, disability,constructionSiteLocation, setOfTools,speed) {
+        super(height, weight, name, date, gender, disability);
+        this.constructionSiteLocation = constructionSiteLocation;
+        this.setOfTools = setOfTools;
+        this.speed = Number(speed);
+    }
 
+    get getInfo() {
+        return super.getInfo;
+    }
 
-// Zadanie 6))))))
+    buildinHouse() {
+        let squareMeter = prompt("Enter square meters");
+        let hoursOfWork = (this.speed * squareMeter) / 60;
 
-// function yourAge(){
-//     let age=prompt('Введите свой возраст:');
-//     if (age>=16){
-//         return 'Добро пожаловать';
-//     }else if(age<16){
-//         return 'Вы еще молоды';
-//     }else{
-//     return 'Введите свой возраст:'};
-// }
-//
-// console.log(yourAge());
+        let day = 0;
+        let week = 0;
+        let month = 0;
+        let year = 0;
 
+        if (hoursOfWork < 24) {
+            console.log(`На стройку уйдет ${hoursOfWork} часов !`);
+        }else if (hoursOfWork >= 24 && hoursOfWork <= 168) {
+            day = (hoursOfWork / 24).toString();
 
-// Zadanie 7))))
+            hoursOfWork = day[2] || 0;
 
-// function yourAge(age) {
-//     let ageValue
-//     ageValue = age || 18;
-//     age = 60 - age;
-//     return age > 16 ? "Добро пожаловать" :
-//         age < 16 ? "Вы еще молоды" :
-//               "Введите возраст";
-// }
-// console.log(yourAge(18));
-// console.log(yourAge(12));
-// console.log(yourAge());
-// console.log(yourAge(undefined));
+            console.log(`На стройку уйдет ${parseInt(day)} дней и ${hoursOfWork} часов!`);
+        } else if (hoursOfWork >= 168 && hoursOfWOrk < 730) {
+            week = (hoursOfWork / 168).toString();
 
-// Zadanie 8))))
+            day = week[2];
+            hoursOfWork = week[3];
+            console.log(`На стройку уйдет ${parseInt(week)} недель, ${day} дней и ${hoursOfWork} часов!`);
+        } else if ( hoursOfWork >= 730 && hoursOfWork < 8760) {
+            month = (hoursOfWork / 730).toString();
+            week = month[2];
+            day = month[3];
+            hoursOfWork = month[4];
 
-// let str = "hello world!";
-// let str1 = [];
-//
-// function ucFirst(word) {
-//     return word[0].toUpperCase() + word.slice(1);
-// }
-//
-// let value = str.split(' ');
-// for (let i = 0; i < value.length; i++) {
-//     str1.push(ucFirst(value[i]));
-// }
-//
-// let str2 = str1.join(" ");
-//
-// console.log(str1);
-// console.log(str2);
+            console.log(`На стройку уйдет ${parseInt(month)} месяцев, ${week} недель, ${day} дней и ${hoursOfWork} часов!`);
+        } else  {
+            year = (hoursOfWork / 8760).toString()
+            month = year[2];
+            week = year[3];
+            day = year [4];
+            hoursOfWork = year[5];
+            console.log(`На стройку уйдет ${parseInt(year)} лет, ${month} месяцев, ${week} недель, ${day} дней и ${hoursOfWork} часов!`);
+        }
+    }
+}
 
-//Zadanie 9)))))
-// let str = "var_texthello.";
-// let str1 = [];
-//
-// function ucFirst(word) {
-//     return word[0].toUpperCase() + word.slice(1);
-// }
-//
-// let value = str.split('_');
-// for (let i = 0; i < value.length; i++) {
-//     str1.push(ucFirst(value[i]));
-// }
-//
-// let str2 = str1.join("");
-//
-// console.log(str1);
-// console.log(str2);
-
-
-
-
-// Zadanie 10))))
-
-// let array = [525,"kubus","oppachki","chet ochen vajnoe",666];
-//
-// function inArray(elements,array){
-//     for (let i=0;i<array.length;i++){
-//         if (array[i]===elements){
-//             return true;
-//         }
-//     }return false
-// }
-//
-// console.log(inArray("kubus",array));
-// console.log(inArray("plak",array));
-// console.log(inArray(525,array));
-// console.log(inArray("opachki:(",array));
+const firstBuilder = new builder(191,150,"Semen",new Date(1666,6,6), "male","have","Koko poko",["кирка", "топор"],35);
+console.log(firstBuilder);
+firstBuilder.buildinHouse();
+firstBuilder.getInfo;
